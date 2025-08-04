@@ -1,0 +1,18 @@
+# /etc/skel/.bash_profile
+
+# Start hyprland on tty1
+#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+#	# Wayland wants its XDG_RUNTIME_DIR
+#	export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+#	export WLR_NO_HARDWARE_CURSORS=1
+#	export XKB_LAYOUT=us
+#	export XKB_VARIANT=intl
+#	exec Hyprland
+#fi
+
+# This file is sourced by bash for login shells.  The following line
+# runs your .bashrc and is recommended by the bash info pages.
+if [[ -f ~/.bashrc ]] ; then
+	. ~/.bashrc
+fi
+. "$HOME/.cargo/env"

@@ -1,0 +1,5 @@
+[user]
+	name = Andrea Gonzalez Varela
+	email = agvarela@seas.upenn.edu
+[url "https://github.com/"]
+	insteadOf = ssh://git@github.com/
